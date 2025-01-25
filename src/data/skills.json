@@ -1,0 +1,33 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "/assets/skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "/assets/skills/css.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "/assets/skills/react.png"
+    },
+    {
+      "title": "Node",
+      "imageSrc": "/assets/skills/node.png"
+    },
+    {
+      "title": "Postgresql",
+      "imageSrc": "/assets/skills/postgres.png"
+    },
+    {
+        "title": "java",
+        "imageSrc": "/assets/skills/java.png"
+      },
+    
+    {
+        "title": "Springboot",
+        "imageSrc": "/assets/skills/springboot.png"
+    }
+
+
+  ]

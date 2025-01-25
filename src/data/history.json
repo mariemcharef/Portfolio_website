@@ -1,0 +1,30 @@
+[
+    {
+        "nature":"Experience",
+      "title": " Competitive Programmer and General Secretary ",
+      "organisation": "Cpc club",
+      "startDate": "Augest, 2024",
+      "endDate": "Present",
+      "description": ["Problem Solving practice","Teach algorithms", "Organise competitions"],
+      "imageSrc": "/assets/history/cpc.png"
+    },
+    {
+        "nature":"Achievement",
+        "title": " 3rd Place - TechX 2024 problem solving competition",
+        "organisation": "IEEE",
+        "startDate": "September, 2024",
+        "endDate": "September, 2024",
+        "description": ["Won a prize with my team of 3 persons"],
+        "imageSrc": "/assets/history/techx.png"
+    },
+    {
+        "nature":"Achievement",
+        "title": " 17th Place - Bee batle 2024 problem solving competition",
+        "organisation": "Esen Club",
+        "startDate": "November, 2024",
+        "endDate": "November, 2024",
+        "description": ["Participation with my team of 3 persons"],
+        "imageSrc": "/assets/history/bee.png"
+        }
+    
+  ]

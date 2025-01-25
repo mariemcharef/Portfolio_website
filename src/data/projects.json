@@ -1,0 +1,10 @@
+[
+    {
+      "title": "Flight Management",
+      "imageSrc": "/assets/projects/project.png",
+      "description": "This is a project made to learn java by building an flight management application.",
+      "skills": ["Java","javafx", "postgresql"],
+      "source": "https://github.com/mariemcharef/Flight-Management"
+    }
+    
+]
