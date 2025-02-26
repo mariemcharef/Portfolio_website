@@ -8,6 +8,7 @@
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
+  gap: 15px;
 }
 
 .image {
@@ -58,4 +59,15 @@
   border-radius: 100px;
   background: var(--color-primary);
   padding: 1px 22px;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.p{
+margin-left: 10%;
 }

@@ -5,6 +5,20 @@
       "description": "This is a project made to learn java by building an flight management application.",
       "skills": ["Java","javafx", "postgresql"],
       "source": "https://github.com/mariemcharef/Flight-Management"
+    },
+    {
+      "title": "Real time Competitive Programming contests ",
+      "imageSrc": "/assets/projects/project.png",
+      "description": "This is a project made to manage contests, problems submissions...",
+      "skills": ["Spring boot","java","react", "postgresql"],
+      "source": "https://github.com/MohamedBouafif/competitve-programming-online-competitions" 
+    },
+    {
+      "title": "Real time Chat application",
+      "imageSrc": "/assets/projects/project.png",
+      "description": "This is a project made to learn webSocket and real time management.",
+      "skills": ["Spring boot","java","javaScript","HTML","css"],
+      "source": "https://github.com/mariemcharef/ChatApplication" 
     }
     
 ]

@@ -12,10 +12,6 @@
       "imageSrc": "/assets/skills/react.png"
     },
     {
-      "title": "Node",
-      "imageSrc": "/assets/skills/node.png"
-    },
-    {
       "title": "Postgresql",
       "imageSrc": "/assets/skills/postgres.png"
     },
