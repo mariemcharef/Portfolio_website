@@ -122,8 +122,25 @@
     .history {
       width: 100%;
       gap: 9px;
+      align-items: center;
+      margin-right:10px;
+
+    }
+    .historyItem img {
+      width: 150px;
+      height: 100px; 
+    }
+    .historyItemDetails h2 {
+      font-size: 20px; 
+    }
+    .historyItemDetails h3 {
+      font-size: 16px; 
     }
   }
+
+
+
+
 .imgex{
     width:300px ;
     height: 200px;
