@@ -21,7 +21,7 @@ This repository contains the codebase for my personal portfolio website. The web
 
 ---
 ## 🌐 Lien du Projet
-[Visitez mon site déployé ici](https://courageous-nougat-a46148.netlify.app/)
+[Project Link ](https://courageous-nougat-a46148.netlify.app/)
 
 ## Installation and Setup
 
