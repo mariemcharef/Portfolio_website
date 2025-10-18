@@ -1,6 +1,6 @@
 import React from 'react'
     import styles from "./ProjectCard.module.css";
-export const ProjectCard = ({p:{ title, imageSrc, description, skills, source }}) => {
+export const ProjectCard = ({p:{ title, imageSrc, description, skills, source,link }}) => {
   return (
         
         <div className={styles.container}>
@@ -14,9 +14,13 @@ export const ProjectCard = ({p:{ title, imageSrc, description, skills, source }}
                     })
                 }
             </ul>
-            <div className={styles.links}>
-            <a href={source} className={styles.link}>Source</a>
-        </div>
+            {source && (<div className={styles.links}>
+            <a href={source} className={styles.link}>Source</a></div>)}
+            
+
+            {link && (<div className={styles.links}>
+            <a href={link} className={styles.link}>Link</a></div>)}
+
         </div>
     )
   

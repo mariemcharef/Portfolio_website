@@ -1,14 +1,5 @@
 [
     {
-        "nature":"Experience",
-      "title": " Competitive Programmer and General Secretary ",
-      "organisation": "Cpc club",
-      "startDate": "Augest, 2024",
-      "endDate": "Present",
-      "description": ["Problem Solving practice","Teach algorithms", "Organise competitions"],
-      "imageSrc": "/assets/history/cpc.png"
-    },
-    {
         "nature":"Achievement",
         "title": " 3rd Place - TechX 2024 problem solving competition",
         "organisation": "IEEE",
@@ -19,12 +10,30 @@
     },
     {
         "nature":"Achievement",
-        "title": " 17th Place - Bee batle 2024 problem solving competition",
-        "organisation": "Esen Club",
-        "startDate": "November, 2024",
-        "endDate": "November, 2024",
-        "description": ["Participation with my team of 3 persons"],
-        "imageSrc": "/assets/history/bee.png"
-        }
+        "title": " Completed CS50’s Introduction to Databases with SQL certification",
+        "organisation": "Harverd University",
+        "startDate": "January, 2024",
+        "endDate": "March, 2024",
+        "description": ["Learned SQL and database management concepts"],
+        "imageSrc": "/assets/history/cs50sql.png"
+    },
+     {
+        "nature":"Achievement",
+        "title": " Completed CS50’s Introduction to Artificial Intelligence with Python certification",
+        "organisation": "Harverd University",
+        "startDate": "January, 2024",
+        "endDate": "March, 2024",
+        "description": ["Learned AI concepts and implementations using Python"],
+        "imageSrc": "/assets/history/sc50ai.png"
+    },
+    {
+      "nature":"Experience",
+      "title": " Competitive Programmer and General Secretary ",
+      "organisation": "Cpc club",
+      "startDate": "August, 2024",
+      "endDate": "August, 2025",
+      "description": ["Problem Solving practice","Teach algorithms", "Organise competitions"],
+      "imageSrc": "/assets/history/cpc.png"
+    }
     
   ]

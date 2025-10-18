@@ -1,28 +1,45 @@
 [
-    {
-      "title": "HTML",
-      "imageSrc": "/assets/skills/html.png"
-    },
-    {
-      "title": "CSS",
-      "imageSrc": "/assets/skills/css.png"
-    },
+
     {
       "title": "React",
       "imageSrc": "/assets/skills/react.png"
+    },
+    {
+        "title": "Angular",
+        "imageSrc": "/assets/skills/angular.png"
     },
     {
       "title": "Postgresql",
       "imageSrc": "/assets/skills/postgres.png"
     },
     {
-        "title": "java",
+        "title": "Java",
         "imageSrc": "/assets/skills/java.png"
-      },
+    },
+    {
+        "title": "C++",
+        "imageSrc": "/assets/skills/c++.png"
+    },
+     {
+        "title": "Python",
+        "imageSrc": "/assets/skills/python.png"
+    },
     
     {
         "title": "Springboot",
         "imageSrc": "/assets/skills/springboot.png"
+    },
+    {
+        "title": "FastAPI",
+        "imageSrc": "/assets/skills/fastapi.png"
+    },
+    {
+        "title": "Git",
+        "imageSrc": "/assets/skills/git.png"
+    },
+     {
+        "title": "Gitub",
+        "imageSrc": "/assets/skills/github.png"
     }
 
 
