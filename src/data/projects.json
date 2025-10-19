@@ -1,25 +1,22 @@
 [
   {
-      "title": "Real time Competitive Programming contests ",
-      "imageSrc": "/assets/projects/cpcoding.png",
-      "description": "A web platform designed to manage programming contests, problem submissions, and participant rankings in real time.",
-      "skills": ["Spring boot","java","react", "postgresql"],
-      "source": "https://github.com/mariemcharef/contsests_management-front-" 
-    },  
+    "title": "Real-Time Competitive Programming Contests",
+    "imageSrc": "/assets/projects/cpcoding.png",
+    "description": "A web platform designed to manage programming contests, problem submissions, and participant rankings in real time.",
+    "skills": ["Spring Boot", "Java", "React", "PostgreSQL"],
+    "source": "https://github.com/mariemcharef/contsests_management-front-"
+  },
   {
-      "title": "Fit-app",
-      "imageSrc": "/assets/projects/fit.png",
-      "description": "A collaborative project built for coaches and athletes to manage training sessions and monitor performance progress effectively.",
-      "skills": ["Fastapi","Angular","Python", "postgresql"],
-      "link": "https://fitapp-139c4.web.app"
-    },
-    
-    {
-      "title": "Payslip Management System",
-      "imageSrc": "/assets/projects/ficha.png",
-      "description": "A system developed to automate the management and generation of employee payslips within a company.",
-      "skills": ["Fastapi","Angular","Python", "postgresql"]
-      
-    }
-    
+    "title": "Fit-App (Contribution)",
+    "imageSrc": "/assets/projects/fit.png",
+    "description": "A collaborative project built for coaches and athletes to manage training sessions and monitor performance progress effectively.",
+    "skills": ["FastAPI", "Angular", "Python", "PostgreSQL"],
+    "link": "https://fitapp-139c4.web.app"
+  },
+  {
+    "title": "Payslip Management System (Contribution)",
+    "imageSrc": "/assets/projects/ficha.png",
+    "description": "A system developed to automate the management and generation of employee payslips within a company dedicated to accountants.",
+    "skills": ["FastAPI", "Angular", "Python", "PostgreSQL"]
+  }
 ]

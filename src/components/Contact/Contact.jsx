@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from "./Contact.module.css";
 export const Contact = () => {
-  return (
+  return (<>
     <footer id="contact" className={styles.container}>
         <div  className={styles.text}>
             <h2>Contact</h2>
@@ -29,7 +29,10 @@ export const Contact = () => {
                 
             </li>
         </ul>
+        
     </footer>
+    <p className={styles.p}>© 2025 Mariem CHAREF — Made with ❤️ using React & Vite.</p>
+    </>
   )
 }
 

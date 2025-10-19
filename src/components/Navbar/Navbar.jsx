@@ -39,6 +39,11 @@ export const Navbar = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
+         <li>
+          <a href="/assets/resume.pdf" target="_blank">
+            <button className={styles.btn}>Resume</button>
+          </a>
+        </li>
         </ul>
       </div>
     </nav>
