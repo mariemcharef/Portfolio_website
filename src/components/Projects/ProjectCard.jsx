@@ -36,7 +36,7 @@ export const ProjectCard = ({ p: { title, imageSrc, description, skills, source,
             target="_blank"
             rel="noopener noreferrer"
           >
-            Live Demo
+            Demo
           </a>
         )}
       </div>

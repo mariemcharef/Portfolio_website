@@ -17,6 +17,6 @@
     "title": "Payslip Management System (Contribution)",
     "imageSrc": "/assets/projects/ficha.png",
     "description": "A system developed to automate the management and generation of employee payslips within a company dedicated to accountants.",
-    "skills": ["FastAPI", "Angular", "Python", "PostgreSQL"]
+    "skills": ["FastAPI","pytest", "Angular", "Python", "PostgreSQL"]
   }
 ]
