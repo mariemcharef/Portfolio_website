@@ -1,19 +1,20 @@
 @import "../../vars.css";
 
-
 .title {
-  font-size: 25px;
+  font-size: clamp(18px, 3.5vw, 25px);
   font-weight: 700;
+  margin: 0;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: clamp(14px, 2.5vw, 25px);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .skill {
-  font-size: 25px;
+  font-size: clamp(14px, 2.5vw, 25px);
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
@@ -25,17 +26,25 @@
   margin-top: 26px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 18px;
+  font-size: clamp(14px, 2.2vw, 18px);
   font-weight: 600;
   border-radius: 50px;
   background: var(--color-primary);
   padding: 6px 20px;
   transition: transform 0.2s ease, background 0.3s ease;
+  white-space: nowrap;
+}
+
+.link:hover {
+  background: #6880f1;
+  transform: translateY(-2px);
 }
 
 .container {
@@ -46,46 +55,67 @@
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 710px;
+  width: 100%;
   gap: 15px;
   position: relative;
-  height: 800px;
+  min-height: 700px;
+  height: auto;
 }
 
-.divContainer{
+.divContainer {
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+/* Add wrapper for image and navigation */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 .image {
   width: 100%;
-  height: 300px;
+  height: clamp(200px, 40vw, 300px);
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.image:hover {
+  transform: scale(1.03);
 }
 
 .navButton {
   position: absolute;
-  top: 200px;
+  top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   border: none;
-  font-size: 40px;
-  padding: 10px 15px;
+  font-size: clamp(24px, 5vw, 40px);
+  padding: clamp(8px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
   cursor: pointer;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   z-index: 10;
+  line-height: 1;
 }
 
 .navButton:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateY(-50%) scale(1.05);
 }
 
 .navButton:first-of-type {
   left: 10px;
+}
+
+.navButton:last-of-type {
+  right: 10px;
 }
 
 .dots {
@@ -93,11 +123,12 @@
   justify-content: center;
   gap: 8px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: clamp(8px, 1.5vw, 10px);
+  height: clamp(8px, 1.5vw, 10px);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5);
   border: none;
@@ -114,7 +145,6 @@
   background: white;
 }
 
-
 .skills {
   width: 100%;
   margin-top: 14px;
@@ -123,59 +153,26 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+  padding: 0;
 }
 
-.skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
-}
-
-.links {
-  width: 100%;
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.link:hover {
-  background: #6880f1;
-  transform: translateY(-2px);
-}
-
-.card{
+.card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 15px;
-
 }
 
-.p{
+.p {
   margin-top: 50px;
   margin-left: 10%;
   color: var(--color-text);
-  font-size: 35px;
+  font-size: clamp(24px, 5vw, 35px);
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: clamp(1px, 0.25vw, 1.75px);
   text-transform: uppercase;
-}
-.image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 26px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.image:hover {
-  transform: scale(1.03);
 }
 
 .modal {
@@ -189,11 +186,12 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
+  padding: 20px;
 }
 
 .zoomedImage {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   cursor: zoom-out;
@@ -211,3 +209,169 @@
   }
 }
 
+/* Tablet breakpoint */
+@media screen and (max-width: 768px) {
+  .divContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+  }
+
+  .container {
+    padding: 16px 20px;
+    min-height: 600px;
+  }
+
+  .p {
+    margin-top: 30px;
+    margin-left: 5%;
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .skill {
+    font-size: 16px;
+    padding: 2px 16px;
+  }
+
+  .link {
+    font-size: 15px;
+    padding: 5px 16px;
+  }
+
+  .image {
+    height: 250px;
+  }
+
+  .navButton {
+    font-size: 30px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .divContainer {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 20px;
+  }
+
+  .container {
+    padding: 14px 16px;
+    min-height: 550px;
+    gap: 12px;
+  }
+
+  .p {
+    margin-top: 20px;
+    margin-left: 3%;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .skills {
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .skill {
+    font-size: 14px;
+    padding: 2px 14px;
+  }
+
+  .links {
+    margin-top: 16px;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 5px 14px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .navButton {
+    font-size: 24px;
+    padding: 6px 10px;
+  }
+
+  .navButton:first-of-type {
+    left: 5px;
+  }
+
+  .navButton:last-of-type {
+    right: 5px;
+  }
+
+  .card {
+    gap: 12px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .zoomedImage {
+    max-width: 95%;
+    max-height: 95%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    padding: 12px;
+    min-height: 500px;
+  }
+
+  .p {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .skill {
+    font-size: 12px;
+    padding: 2px 12px;
+  }
+
+  .link {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .navButton {
+    font-size: 20px;
+    padding: 5px 8px;
+  }
+}

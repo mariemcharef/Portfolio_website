@@ -10,7 +10,7 @@
       "/assets/projects/cpcdng6.png",
       "/assets/projects/cpcdng.png"
     ],
-    "description": "A web platform designed to manage programming contests, including problem statements, solution submissions, result evaluations, clarifications, and announcements.",
+    "description": "A full-stack web platform enabling competitive programmers to train effectively by managing problem statements, code submissions, automatic result evaluations, clarifications, and announcements.",
     "skills": ["Spring Boot", "Java", "React", "PostgreSQL"],
     "source": "https://github.com/mariemcharef/contsests_management-front-"
   },
