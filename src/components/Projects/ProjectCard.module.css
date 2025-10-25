@@ -1,25 +1,5 @@
 @import "../../vars.css";
 
-.container {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: 345px;
-  gap: 15px;
-}
-.divContainer{
-
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.image {
-  margin-bottom: 26px;
-}
 
 .title {
   font-size: 25px;
@@ -30,16 +10,6 @@
   margin-top: 6px;
   font-size: 25px;
   font-weight: 400;
-}
-
-.skills {
-  width: 100%;
-  margin-top: 14px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
 }
 
 .skill {
@@ -68,10 +38,113 @@
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  max-width: 710px;
+  gap: 15px;
+  position: relative;
+  height: 800px;
+}
+
+.divContainer{
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 26px;
+}
+
+.navButton {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 40px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navButton:first-of-type {
+  left: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.activeDot {
+  background: white;
+}
+
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skill {
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: var(--color-dark);
+  padding: 2px 22px;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .link:hover {
-  background: #6880f1; /* lighter tone */
+  background: #6880f1;
   transform: translateY(-2px);
 }
+
 .card{
   display: flex;
   flex-wrap: wrap;
@@ -79,9 +152,11 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+
 }
+
 .p{
-   margin-top: 50px;
+  margin-top: 50px;
   margin-left: 10%;
   color: var(--color-text);
   font-size: 35px;

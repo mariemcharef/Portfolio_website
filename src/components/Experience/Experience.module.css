@@ -139,12 +139,12 @@
     }
   }
 
-
-
-
-.imgex{
-    width:300px ;
-    height: 200px;
+.image {
+  width: 90%;
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 26px;
 }
 .logo {
     width: 85px; 

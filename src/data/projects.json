@@ -1,22 +1,46 @@
 [
   {
     "title": "Real-Time Competitive Programming Contests",
-    "imageSrc": "/assets/projects/cpcoding.png",
-    "description": "A web platform designed to manage programming contests, problem submissions, and participant rankings in real time.",
+    "images": [
+      "/assets/projects/cpcdng1.png",
+      "/assets/projects/cpcdng5.png",
+      "/assets/projects/cpcdng2.png",
+      "/assets/projects/cpcdng4.png",
+      "/assets/projects/cpcdng7.png",
+      "/assets/projects/cpcdng6.png",
+      "/assets/projects/cpcdng.png"
+    ],
+    "description": "A web platform designed to manage programming contests, including problem statements, solution submissions, result evaluations, clarifications, and announcements.",
     "skills": ["Spring Boot", "Java", "React", "PostgreSQL"],
     "source": "https://github.com/mariemcharef/contsests_management-front-"
   },
   {
     "title": "Fit-App (Contribution)",
-    "imageSrc": "/assets/projects/fit.png",
-    "description": "A collaborative project built for coaches and athletes to manage training sessions and monitor performance progress effectively.",
+    "images": [
+      "/assets/projects/fit.png",
+      "/assets/projects/fit1.png",
+      "/assets/projects/fit2.png",
+      "/assets/projects/fit3.png",
+      "/assets/projects/fit4.png",
+      "/assets/projects/fit5.png",
+      "/assets/projects/fit6.png"
+    ],
+    "description": "A collaborative platform designed for coaches and athletes to efficiently manage training sessions, track performance metrics, and monitor progress. The system includes a mobile app for athletes, personalized nutrition plans, structured training programs, and self-coaching features.",
     "skills": ["FastAPI", "Angular", "Python", "PostgreSQL"],
     "link": "https://fitapp-139c4.web.app"
   },
   {
     "title": "Payslip Management System (Contribution)",
-    "imageSrc": "/assets/projects/ficha.png",
-    "description": "A system developed to automate the management and generation of employee payslips within a company dedicated to accountants.",
+    "images": [
+      "/assets/projects/ficha.png",
+      "/assets/projects/ficha1.png",
+      "/assets/projects/ficha2.png",
+      "/assets/projects/ficha4.png",
+      "/assets/projects/ficha5.png",
+      "/assets/projects/ficha6.png",
+      "/assets/projects/ficha8.png"
+    ],
+    "description": "A system developed to automate the management and generation of employee payslips for Tunisian accounting firms. The project provides full payslip calculation, covering all variables such as CNSS contributions, deductions, state taxes, credits employee advances",
     "skills": ["FastAPI","pytest", "Angular", "Python", "PostgreSQL"]
   }
 ]
