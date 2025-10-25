@@ -3,15 +3,27 @@ import styles from "./ProjectCard.module.css";
 
 export const ProjectCard = ({ p: { title, images, description, skills, source, link } }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isZoomed, setIsZoomed] = useState(false);
+
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
   };
+
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
+
   return (
     <div className={styles.container}>
-      <img src={images[currentImageIndex]} alt={`${title} - Image ${currentImageIndex + 1}`} className={styles.image} />
+      {/* Image */}
+      <img
+        src={images[currentImageIndex]}
+        alt={`${title} - Image ${currentImageIndex + 1}`}
+        className={styles.image}
+        onClick={() => setIsZoomed(true)} 
+      />
+
+      {/* Navigation Buttons */}
       {images.length > 1 && (
         <>
           <button onClick={prevImage} className={styles.navButton}>
@@ -20,7 +32,7 @@ export const ProjectCard = ({ p: { title, images, description, skills, source, l
           <button
             onClick={nextImage}
             className={styles.navButton}
-            style={{ right: '10px' }}
+            style={{ right: "10px" }}
           >
             &#8250;
           </button>
@@ -29,12 +41,25 @@ export const ProjectCard = ({ p: { title, images, description, skills, source, l
               <button
                 key={idx}
                 onClick={() => setCurrentImageIndex(idx)}
-                className={`${styles.dot} ${idx === currentImageIndex ? styles.activeDot : ''}`}
+                className={`${styles.dot} ${
+                  idx === currentImageIndex ? styles.activeDot : ""
+                }`}
                 aria-label={`Go to image ${idx + 1}`}
               />
             ))}
           </div>
         </>
+      )}
+
+      {/* Zoomed Modal */}
+      {isZoomed && (
+        <div className={styles.modal} onClick={() => setIsZoomed(false)}>
+          <img
+            src={images[currentImageIndex]}
+            alt="Zoomed view"
+            className={styles.zoomedImage}
+          />
+        </div>
       )}
 
       <h3 className={styles.title}>{title}</h3>
@@ -59,7 +84,6 @@ export const ProjectCard = ({ p: { title, images, description, skills, source, l
             Source
           </a>
         )}
-
         {link && (
           <a
             href={link}
