@@ -1,0 +1,39 @@
+[
+    {
+        "nature":"Achievement",
+        "title": " 3rd Place - TechX 2024 problem solving competition",
+        "organisation": "IEEE",
+        "startDate": "September, 2024",
+        "endDate": "September, 2024",
+        "description": ["Won a prize with my team of 3 persons"],
+        "imageSrc": "/assets/history/techx.png"
+    },
+    {
+        "nature":"Achievement",
+        "title": " Completed CS50’s Introduction to Databases with SQL certification",
+        "organisation": "Harverd University",
+        "startDate": "January, 2024",
+        "endDate": "March, 2024",
+        "description": ["Learned SQL and database management concepts"],
+        "imageSrc": "/assets/history/cs50sql.png"
+    },
+     {
+        "nature":"Achievement",
+        "title": " Completed CS50’s Introduction to Artificial Intelligence with Python certification",
+        "organisation": "Harverd University",
+        "startDate": "January, 2024",
+        "endDate": "March, 2024",
+        "description": ["Learned AI concepts and implementations using Python"],
+        "imageSrc": "/assets/history/sc50ai.png"
+    },
+    {
+      "nature":"Experience",
+      "title": " Competitive Programmer and General Secretary ",
+      "organisation": "Cpc club",
+      "startDate": "August, 2024",
+      "endDate": "August, 2025",
+      "description": ["Problem Solving practice","Teach algorithms", "Organise competitions"],
+      "imageSrc": "/assets/history/cpc.png"
+    }
+    
+  ]

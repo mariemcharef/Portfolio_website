@@ -1,0 +1,215 @@
+.container {
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
+  z-index: 1;
+  margin-top: 76px;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.title {
+  text-align: left;
+  color: var(--color-text);
+  font-size: clamp(24px, 5vw, 35px);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.aboutItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.schoolLogo {
+  width: 140px;
+  min-width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.details {
+  flex: 1;
+  min-width: 0;
+}
+
+.date {
+  font-weight: 600;
+  color: #709af5;
+  margin-bottom: 0.25rem;
+  font-size: clamp(0.875rem, 2vw, 0.99rem);
+}
+
+.details h3 {
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.30rem);
+  font-weight: 600;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.details h4 {
+  margin: 0.25rem 0;
+  font-size: clamp(1.05rem, 2.8vw, 1.4rem);
+  font-weight: 500;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.details p {
+  margin: 0;
+  color: #8eb6ec;
+  font-size: clamp(0.85rem, 2vw, 0.99rem);
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Tablet and up */
+@media (min-width: 640px) {
+  .title {
+    margin-left: 40px;
+  }
+  
+  .aboutItem {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .aboutItems {
+    gap: 2rem;
+  }
+  
+  .schoolLogo {
+    width: 140px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .title {
+    margin-left: 80px;
+  }
+  
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Small screens - maintain flex row */
+@media (max-width: 639px) {
+  .container {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 60px;
+  }
+  
+  .title {
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+  
+  .aboutItem {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .schoolLogo {
+    width: 100px;
+    min-width: 80px;
+    height: 60px;
+  }
+  
+  .details h3 {
+    font-size: 1rem;
+  }
+  
+  .details h4 {
+    font-size: 1.05rem;
+  }
+  
+  .details p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutItem {
+    padding: 0.875rem;
+    gap: 0.625rem;
+  }
+  
+  .schoolLogo {
+    width: 80px;
+    min-width: 70px;
+    height: 50px;
+  }
+  
+  .details h3 {
+    font-size: 0.95rem;
+  }
+  
+  .details h4 {
+    font-size: 1rem;
+  }
+  
+  .details p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutItem {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .schoolLogo {
+    width: 100%;
+    max-width: 120px;
+    height: 70px;
+    align-self: center;
+  }
+  
+  .details {
+    text-align: center;
+  }
+}
