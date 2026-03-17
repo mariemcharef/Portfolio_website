@@ -13,12 +13,8 @@ export const Hero = () => {
         <p>
           Building scalable web apps and fostering competitive programming skills
         </p>
-        
-        <a
-          className={styles.contactBtn}
-          href="mailto:mariem.charef@enicar.ucar.tn"
-        >
-          Contact me
+        <a href="/assets/resume.pdf" target="_blank">
+          <button className={styles.resumeBtn}>Resume</button>
         </a>
       </div>
 

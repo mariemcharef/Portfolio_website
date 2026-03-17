@@ -39,7 +39,7 @@
   margin-bottom: 52px;
 }
 
-.contactBtn {
+.resumeBtn {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -49,6 +49,13 @@
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   margin-top: 50px;
+  border: none;
+}
+.resumeBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .heroImg {

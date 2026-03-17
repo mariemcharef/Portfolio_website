@@ -93,21 +93,23 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: rgba(0, 0, 0, 0.3); /* subtle transparent dark overlay */
+  color: #fff;
   border: none;
   font-size: clamp(24px, 5vw, 40px);
   padding: clamp(8px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
   cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  border-radius: 50%;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
   z-index: 10;
   line-height: 1;
+  backdrop-filter: blur(2px);
 }
 
 .navButton:hover {
-  background: rgba(0, 0, 0, 0.85);
-  transform: translateY(-50%) scale(1.05);
+  transform: translateY(-50%) scale(1.1); /* combines translate + scale */
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 .navButton:first-of-type {
@@ -117,6 +119,7 @@
 .navButton:last-of-type {
   right: 10px;
 }
+
 
 .dots {
   display: flex;
